@@ -72,7 +72,7 @@ const Recommandations: React.FC = () => {
         artists: track.artists.map(artist => artist.name),
       }));
 
-      const sendResponse = await axios.post('https://api-portfolio.gounevps.com/api/chat', transformedTracks, {
+      const sendResponse = await axios.post('https://api-spotistats.gounevps.com/api/chat', transformedTracks, {
         headers: {
           'Content-Type': 'application/json',
         },
