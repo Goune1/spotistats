@@ -7,11 +7,8 @@ const OpenAI  = require('openai')
 
 const app = express()
 app.use(bodyParser.json()); // Appelle bodyParser.json() comme une fonction
-const corsOptions = {
-  origin: '*',
-};
 
-app.use(cors(corsOptions));
+app.use(cors();
 
 
 
