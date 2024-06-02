@@ -20,8 +20,6 @@ const CallbackPage: React.FC = () => {
       const id = userInfo.id;
       // @ts-ignore
       const pp = userInfo.images[1]?.url;
-
-      console.log(username, email, id , pp);
       
       Cookies.set('username', username);
       Cookies.set('email', email);
