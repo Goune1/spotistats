@@ -10,7 +10,7 @@ interface UserInfo {
 
 const SPOTIFY_AUTH_URL = 'https://accounts.spotify.com/authorize';
 const CLIENT_ID = 'ec41269fb4db4cb78f92e27806d1f91d';
-const REDIRECT_URI = 'http://localhost:5173/api/auth/callback/spotify'; // URL de redirection après l'authentification
+const REDIRECT_URI = 'https://spotistats.gounevps.com/api/auth/callback/spotify'; // URL de redirection après l'authentification
 const SCOPE = 'user-read-private user-read-email user-read-playback-state user-modify-playback-state user-read-currently-playing user-library-read user-library-modify playlist-read-private playlist-modify-public playlist-modify-private ugc-image-upload  user-top-read';
 
 
