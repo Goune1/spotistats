@@ -48,7 +48,7 @@ const CallbackPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-slate-900">
         <div className="text-center">
-            
+            <h1 className="text-slate-900">Salut les mecs</h1>
         </div>
     </div>
   );
