@@ -38,7 +38,6 @@ const Recommandations: React.FC = () => {
         if (!accessToken) {
           throw new Error('Access token not found in cookies');
         }
-        console.log(accessToken);
         const response = await axios.get<{ items: TrackInfo[] }>(
           'https://api.spotify.com/v1/me/top/tracks',
           {
@@ -51,7 +50,6 @@ const Recommandations: React.FC = () => {
           }
         );
         const tracks = response.data.items;
-        console.log('Top Tracks:', tracks);
         setTopTracks(tracks);
         sendTopTracks(tracks);
       } catch (error) {
@@ -77,8 +75,6 @@ const Recommandations: React.FC = () => {
           'Content-Type': 'application/json',
         },
       });
-
-      console.log('Data sent successfully:', sendResponse.data);
       const formattedResponse = formatResponse(sendResponse.data); // Formatte la réponse
       setServerResponse(formattedResponse);
       setLoading(false); // Met fin à l'état de chargement
