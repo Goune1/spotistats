@@ -8,11 +8,11 @@ const OpenAI  = require('openai')
 const app = express()
 app.use(bodyParser.json()); // Appelle bodyParser.json() comme une fonction
 
-app.use(cors();
+app.use(cors());
 
 
 
-const openai = new OpenAI({ apiKey: 'sk-proj-bKDcg93030uaelEmKAC5T3BlbkFJHpo67O0eJyL1bypBtlLP' })
+const openai = new OpenAI({ apiKey: process.env.OPEN_AI_KEY })
 
 
 app.post('/api/chat', async (req, res) => {
